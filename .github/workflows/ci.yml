@@ -24,4 +24,4 @@ jobs:
     - name: Run tests
       env:
         HUGGINGFACE_API_KEY: ${{ secrets.HUGGINGFACE_API_KEY }}
-      run: pytest tests/ -v
+      run: python -m pytest tests/ -v
