@@ -1,14 +1,14 @@
-# 🤖 How the Resume Screener Works (For LLM Beginners)
+# How the Resume Screener Works (For LLM Beginners)
 
 This document explains the core AI concepts behind the **llm-resume-ranker** application. You don't need to be an expert – we'll break down everything from embeddings to similarity search to LLM summarization.
 
-## 🧠 What is an LLM?
+## What is an LLM?
 
 **LLM** stands for **Large Language Model**. It's a type of AI trained on massive amounts of text (books, websites, articles). LLMs can understand, generate, and summarize human-like text. Examples: GPT-4, Llama, Flan-T5 (which we use here).
 
 In this app, we use an LLM for **one specific task**: summarizing a candidate's resume into 2–3 bullet points.
 
-## 🔍 How does the app find matching resumes?
+## How does the app find matching resumes?
 
 The magic happens in three steps:
 
@@ -42,7 +42,7 @@ When you paste a job description, the app:
 
 The resumes with the highest scores are ranked at the top.
 
-## 📝 How does summarization work?
+## How does summarization work?
 
 After ranking, you can click **"Summarize"** on any candidate. The app sends a small portion of the resume text (first 1500 characters) to a free LLM hosted by Hugging Face: **google/flan-t5-large**.
 
