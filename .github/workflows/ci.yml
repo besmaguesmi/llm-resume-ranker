@@ -20,7 +20,7 @@ jobs:
         pip3 install -r requirements.txt
         pip3 install -r requirements-dev.txt
     - name: Lint with flake8
-      run: flake8 app/ tests/
+      run: flake8 app/ tests/ --max-line-length=100 --extend-ignore=E203
     - name: Run tests
       env:
         HUGGINGFACE_API_KEY: ${{ secrets.HUGGINGFACE_API_KEY }}
