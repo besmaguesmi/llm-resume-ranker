@@ -1,6 +1,6 @@
 from langchain_huggingface import HuggingFaceEndpoint
-from langchain.prompts import PromptTemplate
-from langchain.chains import LLMChain
+from langchain_core.prompts import PromptTemplate
+from langchain_core.chains import LLMChain
 from app.config import LLM_MODEL, HUGGINGFACE_API_KEY, TOP_K_RESULTS
 
 
