@@ -1,11 +1,9 @@
 # llm-resume-ranker
-
-A simple AI-powered resume screener.  
-Built with LangChain, FAISS, and Streamlit.
-
 [![pre-commit](https://img.shields.io/badge/pre--commit-enabled-brightgreen?logo=pre-commit)](https://github.com/pre-commit/pre-commit)
 [![CI](https://github.com/besmaguesmi/llm-resume-ranker/actions/workflows/ci.yml/badge.svg)](https://github.com/besmaguesmi/llm-resume-ranker/actions/workflows/ci.yml)
 [![Docker](https://img.shields.io/badge/docker-ready-blue?logo=docker)](https://hub.docker.com/)
+A simple AI-powered resume screener.  
+Built with LangChain, FAISS, and Streamlit.
 
 ## Features
 
