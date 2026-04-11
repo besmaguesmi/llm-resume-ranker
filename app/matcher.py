@@ -1,6 +1,6 @@
 from langchain_huggingface import HuggingFaceEndpoint
 from langchain_core.prompts import PromptTemplate
-from langchain.chains import LLMChain
+from langchain_core.output_parsers import StrOutputParser
 from app.config import LLM_MODEL, HUGGINGFACE_API_KEY, TOP_K_RESULTS
 
 
@@ -38,8 +38,9 @@ class ResumeMatcher:
 
     def generate_summary(self, resume_text):
         prompt = PromptTemplate(
-            template="Summarise this candidate's profile in 2-3 bullet points:\n{text}",
-            input_variables=["text"],
+            template="Summarize this candidate's profile in 2-3 bullet points:\n{text}",
+            input_variables=["text"]
         )
-        chain = LLMChain(llm=self.llm, prompt=prompt)
-        return chain.run(text=resume_text[:2000])
+        chain = prompt | self.llm | StrOutputParser()
+        truncated = resume_text[:1500]
+        return chain.invoke({"text": truncated})
