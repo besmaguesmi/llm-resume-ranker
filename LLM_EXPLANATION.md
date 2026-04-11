@@ -49,7 +49,7 @@ After ranking, you can click **"Summarize"** on any candidate. The app sends a s
 
 The LLM generates a short, readable summary. This helps HR quickly see if the candidate matches the job without reading the entire PDF.
 
-## 🧩 Putting it all together – The RAG pattern
+## Putting it all together: The RAG pattern
 
 This app follows a popular AI pattern called **RAG** (Retrieval-Augmented Generation).
 
@@ -61,7 +61,7 @@ This app follows a popular AI pattern called **RAG** (Retrieval-Augmented Genera
 
 RAG is powerful because the LLM doesn't need to know anything about the candidates – it only summarizes what we give it. This reduces hallucinations (making up facts) and keeps the information accurate.
 
-## 🛠️ Why did we choose these specific tools?
+## Why did we choose these specific tools?
 
 | Tool | Purpose | Why not something else? |
 |------|---------|--------------------------|
